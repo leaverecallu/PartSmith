@@ -1,0 +1,9 @@
+cadquery>=2.4.0
+freecad>=0.21.0
+ollama>=0.1.0
+openai>=1.0.0
+pydantic>=2.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pytest>=8.0
+pytest-cov>=4.0

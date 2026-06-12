@@ -1,0 +1,79 @@
+# ─────────────────────────────────────────────────────────────
+# PartSmith Public Repository - Git Ignore
+# 核心私有源码通过 git submodule 挂载，此处不跟踪 core/ 内容
+# ─────────────────────────────────────────────────────────────
+
+# 私有核心挂载点：submodule 指针由 .gitmodules 管理，内部源码不跟踪
+core/*
+!core/.git
+
+# Python 运行时缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# 数据、输出与日志（运行时生成）
+data/
+outputs/
+logs/
+*.log
+
+# 数据库与本地配置
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.local
+.env.*.local
+config/config.local.yaml
+config/*.local.yaml
+
+# 测试与类型检查缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Playwright / 浏览器缓存
+.playwright-mcp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 模型权重与大型二进制
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+*.gguf
+*.bin
+*.h5
+*.joblib
+
+# 大文件格式（示例除外）
+*.step
+*.stp
+*.stl
+*.obj
+*.3mf
+*.brep
+
+# 临时文件
+*.tmp
+*.temp
+*.bak

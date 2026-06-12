@@ -1,0 +1,33 @@
+# PartSmith 配置模板
+# 复制为 config/config.local.yaml 后填写真实值，config.local.yaml 不会被 Git 跟踪。
+
+llm:
+  # 可选: ollama / openai / openai-compatible
+  provider: ollama
+  base_url: http://localhost:11434/v1
+  model: qwen2.5-coder:14b
+  # 如需 OpenAI 兼容服务，请填写 API Key（仅保存在本地 config.local.yaml）
+  api_key: null
+  temperature: 0.2
+  max_tokens: 4096
+
+cad:
+  # 默认 CAD 后端: cadquery / freecad
+  backend: cadquery
+  export_format: step
+  output_dir: ./outputs
+
+paths:
+  # 私有核心挂载目录
+  core_dir: ./core
+
+validation:
+  check_manifold: true
+  check_wall_thickness: true
+  min_wall_thickness_mm: 1.0
+  check_self_intersection: true
+
+ui:
+  host: 127.0.0.1
+  port: 7860
+  share: false
