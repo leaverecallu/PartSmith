@@ -3,7 +3,7 @@
 > 自然语言驱动的参数化 CAD 生成工具
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![Issues](https://img.shields.io/github/issues/<username>/PartSmith.svg)](https://github.com/<username>/PartSmith/issues)
+[![Issues](https://img.shields.io/github/issues/leaverecallu/PartSmith.svg)](https://github.com/leaverecallu/PartSmith/issues)
 
 PartSmith 让你用日常语言描述零件，即可生成可直接制造的 STEP/STL 模型。无论你是机械工程师、硬件创业者还是 Maker，都可以快速把想法变成可加工的 3D 文件。
 
@@ -103,7 +103,7 @@ python scripts/setup_core.py
 
 遇到问题或有新想法？欢迎提交 GitHub Issue：
 
-👉 [https://github.com/<username>/PartSmith/issues](https://github.com/<username>/PartSmith/issues)
+👉 [https://github.com/leaverecallu/PartSmith/issues](https://github.com/leaverecallu/PartSmith/issues)
 
 ---
 
